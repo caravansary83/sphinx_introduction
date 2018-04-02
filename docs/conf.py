@@ -12,16 +12,16 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('code/'))
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'Sphinx introduction'
-copyright = '2018, ANRG'
-author = 'ANRG'
+project = 'Sphinx intro'
+copyright = '2018, Quynh'
+author = 'Quynh'
 
 # The short X.Y version
 version = ''
@@ -41,6 +41,7 @@ release = ''
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
+    'sphinx.ext.githubpages',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -76,7 +77,7 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'default'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -103,7 +104,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Sphinxintroductiondoc'
+htmlhelp_basename = 'Sphinxintrodoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -130,8 +131,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Sphinxintroduction.tex', 'Sphinx introduction Documentation',
-     'ANRG', 'manual'),
+    (master_doc, 'Sphinxintro.tex', 'Sphinx intro Documentation',
+     'Quynh', 'manual'),
 ]
 
 
@@ -140,7 +141,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'sphinxintroduction', 'Sphinx introduction Documentation',
+    (master_doc, 'sphinxintro', 'Sphinx intro Documentation',
      [author], 1)
 ]
 
@@ -151,8 +152,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Sphinxintroduction', 'Sphinx introduction Documentation',
-     author, 'Sphinxintroduction', 'One line description of project.',
+    (master_doc, 'Sphinxintro', 'Sphinx intro Documentation',
+     author, 'Sphinxintro', 'One line description of project.',
      'Miscellaneous'),
 ]
 
