@@ -6,6 +6,7 @@ Welcome to Sphinx intro’s documentation!
    
    install.rst
    support.rst
+   test.rst
 
 
 Indices and tables
