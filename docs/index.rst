@@ -1,5 +1,5 @@
-Welcome to Sphinx intro’s documentation!
-========================================
+Sphinx intro’s documentation!
+=============================
 
 .. toctree::
    :maxdepth: 2
